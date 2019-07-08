@@ -88,7 +88,7 @@ scContentEditor.prototype.onUnload = function (evt) {
 
         var ctl = scForm.browser.getControl("scPostAction");
         if (ctl != null) {
-            postAction = ctl.value;
+            postAction = ctl.baseURI;
         }
 
         var opener = window.opener;
